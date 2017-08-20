@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+gem 'cucumber'
+gem 'capybara'
+gem 'capybara-screenshot'
+gem 'selenium-webdriver', '>= 2.53.0'
+gem 'poltergeist'
+gem 'site_prism'
+gem 'capybara-webkit'
+gem 'rspec'
+gem 'i18n'
+gem 'pry'

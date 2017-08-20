@@ -1,0 +1,29 @@
+capybara:
+  # change browser here or set env "BROWSER"
+  # available options: capybara-webkit, firefox, chrome, phantomjs
+  browser: capybara-webkit
+  wait_time: 10
+  screenshot_path: 'results/'
+
+  selenium_specific:
+    window_size: [1500, 1500]
+  phantomjs_specific:
+    options: ['--ignore-ssl-errors=yes']
+    window_size: [1500, 1500]
+
+project:
+  locale: en
+  load_path: features/locales/*.yml
+
+environment:
+  development:
+    home: https://www.google.co.uk
+    admin: https://www.google.co.uk
+  stage:
+    home: https://www.google.co.uk?stage&home
+    admin: https://www.google.co.uk?stage&admin
+  production:
+    home: https://www.google.co.uk?production&home
+    admin: https://www.google.co.uk?production&admin
+  # change default environment here or define it in TEST_ENV
+  default: development
